@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Grid, Paper, Typography } from '@mui/material';
+import Analytics from './Analytics';
 
 const AdminDashboard = () => {
   return (
@@ -11,12 +12,9 @@ const AdminDashboard = () => {
           </Typography>
         </Grid>
         
-        {/* Quick Stats */}
-        <Grid item xs={12} md={3}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6">Total Users</Typography>
-            {/* Add stats component */}
-          </Paper>
+        {/* Analytics Dashboard */}
+        <Grid item xs={12}>
+          <Analytics />
         </Grid>
         
         {/* Binary Matrix Visualization */}
